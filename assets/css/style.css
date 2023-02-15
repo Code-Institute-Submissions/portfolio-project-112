@@ -1,0 +1,25 @@
+.heading {
+    font-family: 'Londrina Sketch', cursive;
+    text-transform: uppercase;
+}
+
+.h1-rock {
+    color: mediumslateblue;
+}
+
+.h1-paper {
+    color: mediumseagreen;
+}
+
+.h1-scissors {
+    color: mediumorchid;
+}
+
+.h1-dash {
+    color:rgb(77, 77, 77);
+}
+
+.instructions, body {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(77, 77, 77);
+}
