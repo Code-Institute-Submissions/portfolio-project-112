@@ -3,7 +3,6 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: white;
     color: rgb(77, 77, 77);
-    text-align: center;
 }
 
 /* Heading */
@@ -33,11 +32,24 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.scissors-beats-paper {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .paper-beats-rock {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rock-beats-scissors {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .fa-hand-back-fist {
@@ -55,19 +67,63 @@ body {
 /* Game layout */
 
 .game-area {
-
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(135, 157, 184, 0.092);
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
 }
 
-.score-area {
-    
-}
-
+/* Scores */
 .scores {
+    display: inline-block;
     font-size: 10px;
+    text-align: center;
+    padding-top: 15px;
 }
 
+.player {
+    background-color: rgba(24, 141, 154, 0.103);
+    border-style: solid;
+    float: left;
+    width: 45%;
+}
+
+.computer{
+    background-color: rgba(154, 67, 24, 0.103);
+    border-style: solid;
+    float: right;
+    width: 45%;
+}
+
+.player-score {
+    text-align: center;
+}
+
+.computer-score {
+    text-align: center;
+    margin-left: 5px;
+}
+
+/* Images */
+#player-image, #computer-image {
+    width: 100%;
+}
+
+#player-image {
+    float: left;
+}
+
+#computer-image {
+    float: right;
+}
+
+/* Choices */
 .choices-area {
-    
+    text-align: center;
 }
 
 .choices-text {
@@ -75,6 +131,8 @@ body {
     margin: 0;
     text-transform: uppercase;
     font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 /* Buttons */
@@ -82,17 +140,18 @@ body {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: rgb(77, 77, 77);
-    font-size: 6.5px;
+    font-size: 7px;
+    text-align: center;
 }
 
 .btn--paper {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 
 .btn--rock {
-    padding-left: 12.5px;
-    padding-right: 12.5px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .btn--rock, .btn--paper, .btn--scissors {

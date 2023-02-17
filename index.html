@@ -25,19 +25,23 @@
 
             <button data-type="scissors" class="btn btn--scissors">Scissors</button>
         </div>
-    </div>
 
-    <div class="score-area">
         <div class="scores">
-            <p>Your Score: <span id="player-score">0</span></p>
-        </div>
-        <div class="scores">
-            <p>Computer's Score: <span id="computer-score">0</span></p>
-        </div>
-    </div>
+            <div class="player">
+                <p class="player-score">Your Score: <span id="player-score">0</span></p>
+                <img id="player-image" src="assets/images/clipart-rps.png">
+            </div>
 
-    <div class="instructions">
-        <p><i class="fa-regular fa-hand-scissors"></i> Beats <i class="fa-regular fa-hand"></i> <span class="paper-beats-rock"><i class="fa-regular fa-hand"></i> Beats <i class="fa-regular fa-hand-back-fist"></i></span> <i class="fa-regular fa-hand-back-fist"></i> Beats <i class="fa-regular fa-hand-scissors"></i></p>
+            <div class="computer">
+                <p class="computer-score">Computer's Score: <span id="computer-score">0</span></p>
+                <img id="computer-image" src="assets/images/clipart-rps.png">
+            </div>            
+        </div>
+
+        <div class="instructions">
+            <p>| <span class="scissors-beats-paper"><i class="fa-regular fa-hand-scissors"></i> Beats <i class="fa-regular fa-hand"></i></span> | <span class="paper-beats-rock"><i class="fa-regular fa-hand"></i> Beats <i class="fa-regular fa-hand-back-fist"></i></span> | <span class="rock-beats-scissors"><i class="fa-regular fa-hand-back-fist"></i> Beats <i class="fa-regular fa-hand-scissors"></i></span> |</p>
+        </div>
+
     </div>
 
     <!-- Font Awesome -->
