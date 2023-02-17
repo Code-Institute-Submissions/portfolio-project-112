@@ -13,22 +13,37 @@
 </head>
 <body>
 
-    <h1 class="heading"> <span class="h1-rock">Rock</span> <span class="h1-dash">-</span> <span class="h1-paper">Paper</span> <span class="h1-dash">-</span> <span class="h1-scissors">Scissors</span></h1>
-    
-    <div class="instructions">
-        <h2>Instructions:</h2>
-        <p>Scissors beats Paper<br>Paper beats Rock<br>Rock beats Scissors</p>
-    </div>
+    <h1 class="heading"> <span class="h1-rock">Rock</span> - <span class="h1-paper">Paper</span> - <span class="h1-scissors">Scissors</span></h1>
 
     <div class="game-area">
-        
+        <div class="choices-area">
+            <p class="choices-text">Pick a choice:</p>
+
+            <button data-type="rock" class="btn btn--rock">Rock</button>
+
+            <button data-type="paper" class="btn btn--paper">Paper</button>
+
+            <button data-type="scissors" class="btn btn--scissors">Scissors</button>
+        </div>
     </div>
 
     <div class="score-area">
-        <p class="scores">Your Score: <span id="player-score">0</span></p>
-        <p class="scores">Computer's Score: <span id="computer-score">0</span></p>
+        <div class="scores">
+            <p>Your Score: <span id="player-score">0</span></p>
+        </div>
+        <div class="scores">
+            <p>Computer's Score: <span id="computer-score">0</span></p>
+        </div>
     </div>
 
+    <div class="instructions">
+        <p><i class="fa-regular fa-hand-scissors"></i> Beats <i class="fa-regular fa-hand"></i> <span class="paper-beats-rock"><i class="fa-regular fa-hand"></i> Beats <i class="fa-regular fa-hand-back-fist"></i></span> <i class="fa-regular fa-hand-back-fist"></i> Beats <i class="fa-regular fa-hand-scissors"></i></p>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6999690225.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
