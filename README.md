@@ -30,7 +30,7 @@ a random choice, the icons will then show at the "result" area and an alert will
 ### Code
 - This is my first time working with JavaScript and I had a very hard time getting stuff to work, especially getting the buttons to work. I looked at 
 [this](https://javascript.plainenglish.io/building-a-rock-paper-scissors-game-with-javascript-bce23d39509d) tutorial to know how to make the game and how 
-to get the script to work. If I've had more time I would have changed it up even, but sadly after a lot of hours of trying to make sence of everything I didn't
+to get the script to work. If I've had more time I would have changed it up even more than I did, but sadly after a lot of hours of trying to make sence of everything I didn't
 have enough time.
 ### Media
 - Icons from Font Awesome.
