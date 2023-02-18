@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6999690225.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Oswald&display=swap" rel="stylesheet">
     
@@ -12,41 +14,37 @@
     <title>Rock - Paper - Scissors</title>
 </head>
 <body>
-
     <h1 class="heading"> <span class="h1-rock">Rock</span> - <span class="h1-paper">Paper</span> - <span class="h1-scissors">Scissors</span></h1>
+    <h2 class="instructions">| <span class="scissors-beats-paper"><i class="fa-regular fa-hand-scissors"></i> Beats <i class="fa-regular fa-hand"></i></span> | <span class="paper-beats-rock"><i class="fa-regular fa-hand"></i> Beats <i class="fa-regular fa-hand-back-fist"></i></span> | <span class="rock-beats-scissors"><i class="fa-regular fa-hand-back-fist"></i> Beats <i class="fa-regular fa-hand-scissors"></i></span> |</h2>
 
-    <div class="game-area">
-        <div class="choices-area">
-            <p class="choices-text">Pick a choice:</p>
+<div class="container">
 
-            <button data-type="rock" class="btn btn--rock">Rock</button>
-
-            <button data-type="paper" class="btn btn--paper">Paper</button>
-
-            <button data-type="scissors" class="btn btn--scissors">Scissors</button>
-        </div>
-
-        <div class="scores">
-            <div class="player">
-                <p class="player-score">Your Score: <span id="player-score">0</span></p>
-                <img id="player-image" src="assets/images/clipart-rps.png">
+        <div class="section">
+            <div class="info">
+                <h3>Your Score:</h3><span id="p-score">0</span>
             </div>
-
-            <div class="computer">
-                <p class="computer-score">Computer's Score: <span id="computer-score">0</span></p>
-                <img id="computer-image" src="assets/images/clipart-rps.png">
-            </div>            
+            <div class="show">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </div>
         </div>
 
-        <div class="instructions">
-            <p>| <span class="scissors-beats-paper"><i class="fa-regular fa-hand-scissors"></i> Beats <i class="fa-regular fa-hand"></i></span> | <span class="paper-beats-rock"><i class="fa-regular fa-hand"></i> Beats <i class="fa-regular fa-hand-back-fist"></i></span> | <span class="rock-beats-scissors"><i class="fa-regular fa-hand-back-fist"></i> Beats <i class="fa-regular fa-hand-scissors"></i></span> |</p>
+        <div class="section">
+            <div class="info">
+                <h3>PC Score:</h3><span id="c-score">0</span>
+            </div>
+            <div class="show computer">
+                <i class="fa-regular fa-hand-scissors"></i>
+            </div>
         </div>
+    </div>
+    <h2 id="text2">Make your move:</h2>
 
+    <div class="selection">
+        <button class="fa-regular fa-hand-back-fist" id="rock"></button>
+        <button class="fa-regular fa-hand" id="paper"></button>
+        <button class="fa-regular fa-hand-scissors" id="scissors"></button>
     </div>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/6999690225.js" crossorigin="anonymous"></script>
-    
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>

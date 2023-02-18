@@ -1,17 +1,10 @@
-/* Global */
-body {
-    font-family: 'Oswald', sans-serif;
-    background-color: white;
-    color: rgb(77, 77, 77);
-}
-
 /* Heading */
 .heading {
     font-family: 'Londrina Sketch', cursive;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
-    padding-bottom: 15px;
+    font-size: 40px;
+    padding-bottom: 5px;
     margin: 0;
 }
 
@@ -27,14 +20,14 @@ body {
     color: mediumorchid;
 }
 
-/* Instructions */
+/* Instruction Icons */
 .instructions{
     text-align: center;
     text-transform: uppercase;
+    padding: 5px;
+    padding-right: 30px;
+    margin: 0 auto;
     font-size: 10px;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 3px;
 }
 
 .scissors-beats-paper {
@@ -64,98 +57,100 @@ body {
     color: mediumorchid;
 }
 
-/* Game layout */
-
-.game-area {
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    background-color: rgba(135, 157, 184, 0.092);
-    padding-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0;
-}
-
-/* Scores */
-.scores {
-    display: inline-block;
-    font-size: 10px;
-    text-align: center;
-    padding-top: 15px;
-}
-
-.player {
-    background-color: rgba(24, 141, 154, 0.103);
-    border-style: solid;
-    float: left;
-    width: 45%;
-}
-
-.computer{
-    background-color: rgba(154, 67, 24, 0.103);
-    border-style: solid;
-    float: right;
-    width: 45%;
-}
-
-.player-score {
-    text-align: center;
-}
-
-.computer-score {
-    text-align: center;
-    margin-left: 5px;
-}
-
-/* Images */
-#player-image, #computer-image {
-    width: 100%;
-}
-
-#player-image {
-    float: left;
-}
-
-#computer-image {
-    float: right;
-}
-
-/* Choices */
-.choices-area {
-    text-align: center;
-}
-
-.choices-text {
-    padding: 0;
+/* HTML & Body */
+*{
     margin: 0;
-    text-transform: uppercase;
-    font-size: 12px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    color: rgb(77, 77, 77);
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+/* Game area, player- & computer score */
+.container{
+    display: flex;
+}
+
+.container .section{
+    width: 100%;
+    margin: 20px 50px;
+    border: 1px solid;
+    
+}
+
+/* Icons */
+.section .info{
+    background: rgb(45, 142, 177);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-color: rgba(50, 50, 50, 0.841);
+}
+
+.info span , .info h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(50, 50, 50);
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : rgb(36, 116, 145);
+    height: 220px;
+}
+
+.show i{
+    font-size: 100px;
+    color: rgb(14, 41, 73);
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
 }
 
 /* Buttons */
-.btn {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: rgb(77, 77, 77);
-    font-size: 7px;
-    text-align: center;
+.selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
 }
 
-.btn--paper {
-    padding-left: 11px;
-    padding-right: 11px;
-}
-
-.btn--rock {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.btn--rock, .btn--paper, .btn--scissors {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
+.selection button{
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    background : rgb(36, 116, 145);
+    font-size: 33px;
+    color: rgb(14, 41, 73);
+    border-color: rgba(50, 50, 50, 0.841);
 }
